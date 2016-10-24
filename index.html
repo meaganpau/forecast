@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forecast</title>
+	<link rel="stylesheet" href="styles/fonts.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="scripts/skycons.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"></script>
+	<script id="template" type="x-handlebars-template">
+		<section class="forecast">
+			<h1>{{weather}}</h1>
+			<h2>{{tempC}}</h2>
+			<h2>{{location}}</h2>
+		</section>
+	</script>
+</head>
+<body>
+	<main>
+		<div class="loading">Looking for location...</div>
+		<canvas id="icon" width="200" height="200"></canvas>
+		<section id="weather"></section>
+	</main>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

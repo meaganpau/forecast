@@ -1,0 +1,64 @@
+@import 'setup';
+
+body {
+	height: 100vh;
+	font-family:'BebasNeue Thin',Sans-Serif;
+}
+
+main {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+h1, h2 {
+	margin: 10px;
+	padding: 0;
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+.location {
+	display: none;
+}
+
+.loading {
+	display: none;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: 3px;
+	color: #ccc;
+}
+
+canvas {
+	display: inline-block;
+	display: none;
+}
+
+.forecast {
+	margin: 5% 0;
+	width: 100%;
+}
+
+#weather {
+	vertical-align: top;
+	height: 200px;
+	display: inline-block;
+	text-align: left;
+	letter-spacing: 3px;
+}
+
+@media (max-width: 600px) {
+	#weather {
+		text-align: center;
+	}
+}
